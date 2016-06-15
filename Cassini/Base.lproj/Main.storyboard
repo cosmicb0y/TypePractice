@@ -126,6 +126,7 @@
                                 <rect key="frame" x="285" y="391" width="30" height="30"/>
                                 <state key="normal" title="확인"/>
                                 <connections>
+                                    <action selector="buttonPress:" destination="eZh-fX-Xcs" eventType="touchUpInside" id="09b-mI-54J"/>
                                     <segue destination="wNJ-DM-ilJ" kind="presentation" identifier="name" animates="NO" id="0uf-Dh-L4K"/>
                                 </connections>
                             </button>

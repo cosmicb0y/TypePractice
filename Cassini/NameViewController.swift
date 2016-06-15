@@ -8,9 +8,20 @@
 
 import UIKit
 
+private let sharedName = NameViewController()
+
 class NameViewController: UIViewController {
 
     
     @IBOutlet weak var nameField: UITextField!
+    
+    var name: String = ""
 
+    @IBAction func buttonPress(sender: UIButton) {
+        sharedName.name = nameField.text!
+    }
+    
+    class var sharedInstance: NameViewController{
+        return sharedName
+    }
 }

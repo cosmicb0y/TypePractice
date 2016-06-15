@@ -29,9 +29,7 @@ class ImageViewController: UIViewController, UITextFieldDelegate
         default:
             break
         }
-        
-
-
+      
     }
     
     override func viewWillAppear(animated: Bool) {
