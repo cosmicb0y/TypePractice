@@ -26,6 +26,8 @@ class ImageViewController: UIViewController, UITextFieldDelegate
             wordArray.append("요태까지 날 미행한고야?")
             wordArray.append("물논. 그리고 짜네가 또망가료눈굿또 알고있치")
             textFieldAndString = wordArray[0]
+        case 3:
+            break
         default:
             break
         }
@@ -56,6 +58,12 @@ class ImageViewController: UIViewController, UITextFieldDelegate
     
     var mode = 0 // 1: 단어, 2: 긴글, 3: 랭킹, 4: 설정
     
+    struct rank {
+        var name: String
+        var score: Int
+    }
+    
+    var ranking = [rank]()
     
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
