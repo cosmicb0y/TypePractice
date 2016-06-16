@@ -50,6 +50,7 @@ class ImageViewController: UIViewController, UITextFieldDelegate
     var textFieldAndString: String {
         get { return textFieldString }
         set { textField.text = newValue
+            textField.textColor = SettingData.sharedInstance.color
             textFieldString = newValue
         }
     }
@@ -61,14 +62,36 @@ class ImageViewController: UIViewController, UITextFieldDelegate
     struct rank {
         var name: String
         var score: Int
+        init(name: String, score: Int){
+            self.name = name
+            self.score = score
+        }
     }
     
-    var ranking = [rank]()
+    private let defaults = NSUserDefaults.standardUserDefaults()
     
+    var rankingS: [Int] {
+        get { return defaults.objectForKey(History.DefaultsKey) as? [Int] ?? [] }
+        set { defaults.setObject(newValue, forKey: History.DefaultsKey) }
+    }
+
+    var rankingN: [String] {
+        get { return defaults.objectForKey(History.SegueIdentifiter) as? [String] ?? [] }
+        set { defaults.setObject(newValue, forKey: History.SegueIdentifiter) }
+    }
+    
+    private struct History {
+        static let DefaultsKey = "ImageViewController.History"
+        static let SegueIdentifiter = "Show Diagnostic History"
+    }
+        
+    var score = 0;
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textInputField.text == textFieldString {
             self.textField.textColor = UIColor.blackColor()
+            score += 100
+            ScoreLabel.text = "\(score)"
             print("correct")
             if (wordArray.count - 1 > wordArrayIndex)
             {
@@ -78,12 +101,41 @@ class ImageViewController: UIViewController, UITextFieldDelegate
             textInputField.text = ""
         } else {
             self.textField.textColor = UIColor.redColor()
+            score -= 50
+            ScoreLabel.text = "\(score)"
             print("wrong")
         }
         return true
     }
     
+    var counter = 10
+    var timer = NSTimer()
     
+    @IBAction func StartButton(sender: AnyObject) {
+        counter = 10
+        score = 0
+        TimeLabel.text = "\(counter)"
+        ScoreLabel.text = "\(score)"
+        timer.invalidate()
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(timerAction),userInfo: nil, repeats: true )
+    }
     
+    @IBOutlet weak var TimeLabel: UILabel!
+    @IBOutlet weak var ScoreLabel: UILabel!
+    
+    func timerAction() {
+        counter -= 1
+        TimeLabel.text = "\(counter)"
+        
+        if(counter == 0)
+        {
+            timer.invalidate()
+            rankingN.append(NameViewController.sharedInstance.name)
+            rankingS.append(score)
+            print("\(rankingN)")
+            print("\(rankingS)")
+            
+        }
+    }
     
 }

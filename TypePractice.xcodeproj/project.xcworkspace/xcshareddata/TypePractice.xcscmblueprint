@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A9652CDA7918149404A90566A36910BC77CBFB0E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A9652CDA7918149404A90566A36910BC77CBFB0E" : 0,
+    "7B636446ED64619BD77B604A625454C60DE4A925" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AC9DDB95-E60D-4008-9114-F771330A1EBE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A9652CDA7918149404A90566A36910BC77CBFB0E" : "Cassini%20copy\/",
+    "7B636446ED64619BD77B604A625454C60DE4A925" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TypePractice",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TypePractice.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/2013105088\/ios_01.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B636446ED64619BD77B604A625454C60DE4A925"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cosmicb0y\/TypePractice.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A9652CDA7918149404A90566A36910BC77CBFB0E"
+    }
+  ]
+}

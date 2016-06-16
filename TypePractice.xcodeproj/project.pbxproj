@@ -14,6 +14,11 @@
 		2A4D9B6F1CE0D8B3002CD25D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4D9B6D1CE0D8B3002CD25D /* LaunchScreen.storyboard */; };
 		2A4D9B781CE0D934002CD25D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D9B771CE0D934002CD25D /* ImageViewController.swift */; };
 		2A4D9B7A1CE0DC50002CD25D /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D9B791CE0DC50002CD25D /* DemoURL.swift */; };
+		2A6BCD511D1299AB00CBD6F6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BCD501D1299AA00CBD6F6 /* SettingViewController.swift */; };
+		2A6BCD551D129EC000CBD6F6 /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BCD541D129EC000CBD6F6 /* SettingData.swift */; };
+		2A6BCD591D12F07300CBD6F6 /* RankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BCD581D12F07300CBD6F6 /* RankTableViewController.swift */; };
+		2A6BCD5D1D12F63900CBD6F6 /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BCD5C1D12F63900CBD6F6 /* Rank.swift */; };
+		2A6BCD5F1D12F7B900CBD6F6 /* RankList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BCD5E1D12F7B900CBD6F6 /* RankList.swift */; };
 		2AA216B11D11B06100028F08 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA216B01D11B06100028F08 /* NameViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +32,11 @@
 		2A4D9B701CE0D8B3002CD25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A4D9B771CE0D934002CD25D /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		2A4D9B791CE0DC50002CD25D /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
+		2A6BCD501D1299AA00CBD6F6 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2A6BCD541D129EC000CBD6F6 /* SettingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
+		2A6BCD581D12F07300CBD6F6 /* RankTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankTableViewController.swift; sourceTree = "<group>"; };
+		2A6BCD5C1D12F63900CBD6F6 /* Rank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
+		2A6BCD5E1D12F7B900CBD6F6 /* RankList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankList.swift; sourceTree = "<group>"; };
 		2AA216B01D11B06100028F08 /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,9 +73,14 @@
 				2A4D9B661CE0D8B3002CD25D /* ViewController.swift */,
 				2AA216B01D11B06100028F08 /* NameViewController.swift */,
 				2A4D9B681CE0D8B3002CD25D /* Main.storyboard */,
+				2A6BCD581D12F07300CBD6F6 /* RankTableViewController.swift */,
+				2A6BCD5C1D12F63900CBD6F6 /* Rank.swift */,
+				2A6BCD5E1D12F7B900CBD6F6 /* RankList.swift */,
 				2A4D9B771CE0D934002CD25D /* ImageViewController.swift */,
 				2A4D9B791CE0DC50002CD25D /* DemoURL.swift */,
 				2A4D9B761CE0D8C8002CD25D /* Supporting Files */,
+				2A6BCD501D1299AA00CBD6F6 /* SettingViewController.swift */,
+				2A6BCD541D129EC000CBD6F6 /* SettingData.swift */,
 			);
 			path = Cassini;
 			sourceTree = "<group>";
@@ -153,11 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A6BCD591D12F07300CBD6F6 /* RankTableViewController.swift in Sources */,
+				2A6BCD551D129EC000CBD6F6 /* SettingData.swift in Sources */,
+				2A6BCD5D1D12F63900CBD6F6 /* Rank.swift in Sources */,
 				2A4D9B7A1CE0DC50002CD25D /* DemoURL.swift in Sources */,
 				2A4D9B671CE0D8B3002CD25D /* ViewController.swift in Sources */,
 				2A4D9B781CE0D934002CD25D /* ImageViewController.swift in Sources */,
 				2A4D9B651CE0D8B3002CD25D /* AppDelegate.swift in Sources */,
 				2AA216B11D11B06100028F08 /* NameViewController.swift in Sources */,
+				2A6BCD511D1299AB00CBD6F6 /* SettingViewController.swift in Sources */,
+				2A6BCD5F1D12F7B900CBD6F6 /* RankList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
